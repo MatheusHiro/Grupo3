@@ -4,6 +4,6 @@ import Footer from "./footer"
 export default function Home() {
   return (
     // Formulario()
-    Footer()
+    Formulario()
   )
 }

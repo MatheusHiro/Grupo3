@@ -6,22 +6,22 @@ export default function Footer() {
       <div class="links">
         {/* Link para o site oficial */}
         <a href="https://www.pokemon.com/br/">
-          <img alt="Logo pokemon" src="img/pokemon-logo.png" />
+          <img class="aumentavel" alt="Logo pokemon" src="img/pokemon-logo.png" />
         </a>
 
         {/* // Link para o instagram da IDE */}
         <a href="https://www.instagram.com/ide_jr/">
-          <img alt="Logo instagram" src="img/instagram-logo.png" />
+          <img class="aumentavel" alt="Logo instagram" src="img/instagram-logo.png" />
         </a>
 
         {/* Link do linkedin da IDE */}
         <a href="https://www.linkedin.com/company/empresa-j%C3%BAnior-ide/">
-          <img alt="Logo linkedin" src="img/linkedin-logo.png" />
+          <img class="aumentavel" alt="Logo linkedin" src="img/linkedin-logo.png" />
         </a>
 
         {/* Link para o site da IDE */}
         <a href="https://www.idejr.com.br/">
-          <img alt="Logo ide" src="img/ide-logo.png" />
+          <img class="aumentavel" alt="Logo ide" src="img/ide-logo.png" />
         </a>
       </div>
       <div class="direitos">
@@ -31,6 +31,7 @@ export default function Footer() {
         </p>        
         <p>Termos de Uso | Politica de Privacidade | Política de Cookies</p>
       </div>
+      <img class="logo-final" alt="Logo ide" src="img/ide-logo.png" />
     </div>
   );
 }
