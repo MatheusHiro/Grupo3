@@ -1,9 +1,11 @@
-import Formulario from "./formulario"
-import Footer from "./footer"
+import Formulario from "./components/Formulario/formulario"
+import Footer from "./components/Footer/footer"
 
 export default function Home() {
   return (
-    // Formulario()
-    Formulario()
+    <>
+      <Formulario/>
+      <Footer/>
+    </>
   )
 }
