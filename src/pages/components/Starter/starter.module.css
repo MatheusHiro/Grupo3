@@ -9,3 +9,7 @@
     vertical-align: middle;
     /* Center the text vertically */
 }
+
+.title {
+    color: red;
+}

@@ -27,7 +27,12 @@ export default function Starter() {
                 fraquezas.push(Tipo(json[key]['superEfetivo'][key_elemento]))
             }
 
+
             return <>
+                <p style={{ color: json[key]['mainColor'] }}>
+                    {tipo}
+                </p>
+
                 <TabelaPokemons json={json[key]} />
                 <div className="tipos">
                     {...fraquezas}
