@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'ide';
+    src: url('/fonts/uni05_53.ttf') format('truetype');
+}
+
+.tituloForm{
+ height: 20vh;
+ background-color: white;
+ color:purple;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ margin-bottom: 40px;
+
+}
+
+.camposPreencher{
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-bottom: 10px;
+    
+
+}
+
+.campoBotao{
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-bottom: 120px;
+    
+
+}
+
+.caixaPreencher{
+    width: 700px;
+    color:purple;
+    font-family: 'ide';
+
+}
+
+.caixaBotao{
+    width: 500px;
+    color:purple;
+    font-family: 'ide';
+
+}
