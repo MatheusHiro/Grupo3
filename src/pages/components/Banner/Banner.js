@@ -1,15 +1,15 @@
-import borders from "../src/styles/borders.module.css"
-import styles from '../src/styles/Home.module.css'
+import borders from "../../../styles/borders.module.css"
+import styles from '../../../styles/Home.module.css'
 import Image from 'next/image'
-import nekoAnotando from '../public/img/neko-anotando.png'
-import Iniciais from '../src/pages/iniciais'
+import nekoAnotando from '../../../../public/img/neko-anotando.png'
+import Iniciais from '../../iniciais'
 
 
-export default function Banner(){
+export default function Banner() {
     return (
         <div className={styles.home_background}>
             <div className={styles.neko_container}>
-                <Image src={nekoAnotando} width={500}/>
+                <Image src={nekoAnotando} width={500} />
             </div>
             <h1>
                 <p className={styles.texto_branco}>POKE</p>
@@ -23,8 +23,8 @@ export default function Banner(){
                         </a>
                     </h2>
                 </div>
-                
-          </h1>
+
+            </h1>
         </div>
     )
 }

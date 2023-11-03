@@ -3,8 +3,12 @@
 }
 
 .intro_text {
+
     text-align: center;
+    font-size: 300%;
 }
+
+.button_type_color {}
 
 .button {
     background-color: white;
@@ -19,3 +23,41 @@
     display: flex;
     flex-direction: row;
 }
+
+.description_container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.tipos_text {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.tipos {
+    display: flex;
+    flex-direction: row;
+}
+
+.elements button {
+    background-color: white;
+
+    margin: 0.2rem;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+/*
+.tipos button {
+    margin: 0.2rem;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.tipos button:hover {
+    transform: translateY(-1rem);
+}*/

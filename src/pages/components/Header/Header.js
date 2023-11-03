@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import styles from '../src/styles/Home.module.css'
+import styles from '../../../styles/Home.module.css'
 
-export default function Header(){
+export default function Header() {
     return (
         <nav className={styles.navbar}>
             <ul>

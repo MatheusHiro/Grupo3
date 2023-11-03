@@ -6,13 +6,21 @@ import { getBorderClassByColor, getBorderClassByType } from '../../../utils/bord
 import border from '../../../styles/borders.module.css'
 import { symlink } from "fs";
 
-function ColoredImage({ ImageComponent, fillColor, borderClass }) {
+function ColoredImage({ ImageComponent, fillColor, borderClass, type }) {
     return (
-        <a>
-            <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
-                <ImageComponent fill={fillColor} />
-            </button>
-        </a>
+        <div className={styles.tipos_text}>
+            <p >
+                {type}
+            </p>
+            <div className={styles.elements}>
+                <button className={`${borderClass} ${border.pixelCorners} `}>
+
+                    <ImageComponent fill={fillColor} />
+                </button>
+            </div>
+
+
+        </div>
     );
 }
 
@@ -26,11 +34,13 @@ export default function iniciais() {
             <p className={styles.intro_text}>
                 CONHECENDO OS STARTERS
             </p>
-            <p>
-                ESCOLHA UM!
-            </p>
-            <div className={`${borderClass} ${border.pixelCorners}`}>
+
+            <div className={`${styles.description_container} ${borderClass} ${border.pixelCorners}`}>
                 <div>
+
+                    <p>
+                        ESCOLHA UM!
+                    </p>
                     <img src="img/neko-dormindo.png" />
                 </div>
                 <div>
@@ -42,10 +52,10 @@ export default function iniciais() {
                 </div>
             </div>
             <div className={styles.bar_container}>
-                <div className="tipos">
-                    <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} />
-                    <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} />
-                    <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} />
+                <div className={styles.tipos}>
+                    <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} type={"AGUA"} />
+                    <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} type={"PLANTA"} />
+                    <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} type={"FOGO "} />
 
                 </div>
                 <a href="https://www.idejr.com.br/" target="_blank">
