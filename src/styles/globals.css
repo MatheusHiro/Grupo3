@@ -137,6 +137,10 @@ table {
     margin: 0.2rem;
     height: 3rem;
     width: 6rem;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
 .tipos img {
     margin: 0.2rem;
     width: 2rem;
@@ -145,6 +149,9 @@ table {
 }
 
 .tipos button:hover {
+    transform: translateY(-1rem);
+}
+
 .tipos img:hover {
     transform: translateY(-1rem);
 }

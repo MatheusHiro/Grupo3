@@ -4,6 +4,23 @@ import json from '../../../../content/pokemons.json';
 import border from "../../../styles/borders.module.css"
 import { getBorderClassByColor, getBorderClassByType } from '../../../utils/borderUtils';
 import styles from "./starter.module.css"
+import Agua from "@img/agua";
+import Fogo from "@img/fogo";
+import Planta from "@img/planta"
+
+function ColoredImage({ ImageComponent, fillColor, borderClass }) {
+    return (
+
+        <div className={styles.elements}>
+            <button className={`${borderClass} ${border.pixelCorners} `}>
+
+                <ImageComponent fill={fillColor} />
+            </button>
+        </div>
+
+
+    );
+}
 
 export default function Starter() {
     // let tipo = "AGUA"
@@ -14,7 +31,6 @@ export default function Starter() {
     let super_efetivos = []
 
     let borderClass = getBorderClassByType(tipo)
-
 
     for (const key in json) {
         if (tipo == key) {
@@ -38,6 +54,13 @@ export default function Starter() {
                         {/*Bota a tabela de pokemons*/}
 
                         <TabelaPokemons json={json[key]} />
+
+                        <div className={styles.tipos}>
+                            <ColoredImage ImageComponent={Agua} fillColor={json[key]['mainColor']} borderClass={borderClass} />
+                            <ColoredImage ImageComponent={Planta} fillColor={json[key]['mainColor']} borderClass={borderClass} />
+                            <ColoredImage ImageComponent={Fogo} fillColor={json[key]['mainColor']} borderClass={borderClass} />
+
+                        </div>
                     </div>
                     <div className={styles.container_description}>
                         <div>
