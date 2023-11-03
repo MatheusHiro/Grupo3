@@ -7,11 +7,12 @@ import border from '../../../styles/borders.module.css'
 
 function ColoredImage({ ImageComponent, fillColor, borderClass }) {
     return (
-        <div className={`${borderClass} ${border.pixelCorners}`}>
+        <div className={`${borderClass} ${border.pixelCorners} ${styles.elements}`}>
             <ImageComponent fill={fillColor} />
         </div>
     );
 }
+
 
 export default function iniciais() {
 
@@ -38,16 +39,18 @@ export default function iniciais() {
                 </div>
             </div>
 
-            <div>
+            <div className={styles.container}>
                 <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} />
                 <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} />
                 <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} />
-            </div>
-            <div className={`${borderClass} ${border.pixelCorners}`}>
                 <a href="https://www.idejr.com.br/" target="_blank">
-                    <img src="img/logo-pixelado-roxo.png" />
+                    <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
+                        <img src="img/logo-pixelado-roxo.png" alt="Logo" />
+                    </button>
                 </a>
             </div>
+
+
         </div>
     );
 }

@@ -1,3 +1,35 @@
 .iniciais {
     color: #603B88;
 }
+
+.button {
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.elements {
+    width: 196px;
+    height: 98px;
+}
+
+.image_container {
+    border-right: 1px solid #603B88;
+    /* Add a vertical line to the right of the image container */
+    padding-right: 10px;
+    /* Add spacing to the right of the line */
+    margin-right: 10px;
+    /* Add spacing between the image and the content */
+}
+
+.content_container {
+    flex: 1;
+    /* Allow the content container to grow and occupy available space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* You can add styles for the image and content divs as needed */
