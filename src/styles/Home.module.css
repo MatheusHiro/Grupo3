@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    background-color: #32253F;
+    padding: 20px 10px;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: #fff;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 175%;
+  }
+  
+  .navbar a:hover {
+    color: #B22559;
+  }
+
+  .home_background {
+    display: flex;
+    background-color: #603B88;
+    
+  }
+
+  .neko_container {
+    margin-left: 7em;
+    margin-right: 2em;
+    margin-top: 2.5em;
+}
+
+.texto_branco {
+    color: #fff;
+    text-shadow: 5px 5px #000000;
+    margin-left: 0px;
+    margin-top: 150px;
+    font-size: 400%;
+}
+.texto_rosa {
+    color: #B22559;
+    text-shadow: 5px 5px #000000;
+    margin-left: 0px;
+    margin-top: 200px;
+    font-size: 400%;
+}
+
+
+.button {
+  background-color: #ffffff00; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 140px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
+  text-shadow: 2px 2px #000000;
+  font-size: 35px;
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
+
+.grow:hover { 
+  transform: scale(1.1); 
+  }
