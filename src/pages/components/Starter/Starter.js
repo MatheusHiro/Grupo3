@@ -24,28 +24,53 @@ export default function Starter() {
             }
 
             for (const key_elemento in json[key]['superEfetivo']) {
-                fraquezas.push(Tipo(json[key]['superEfetivo'][key_elemento]))
+                super_efetivos.push(Tipo(json[key]['superEfetivo'][key_elemento]))
             }
 
 
             return <>
-                <p style={{ color: json[key]['mainColor'] }}>
-                    {tipo}
-                </p>
-
-                <TabelaPokemons json={json[key]} />
-                <div className="tipos">
-                    {...fraquezas}
-                </div>
-                <div className="tipos">
-                    {...super_efetivos}
-                    <div className={`${borderClass} ${border.pixelCornersDescription} ${styles.description}`}>
-                        <p>
-                            {json[key]['description']}
+                <div className={styles.container}>
+                    <div className={styles.container_description}>
+                        {/*Adiciona a tipo e modifica a cor do texto de acordo com ele*/}
+                        <p style={{ color: json[key]['mainColor'] }}>
+                            {tipo}
                         </p>
-                    </div>
+                        {/*Bota a tabela de pokemons*/}
 
+                        <TabelaPokemons json={json[key]} />
+                    </div>
+                    <div className={styles.container_description}>
+                        <div>
+                            <img src="/img/neko-piscando.png" />
+                        </div>
+                        {/*div para as fraquezas e super efetivos*/}
+                        <div className={`${'tipos'} ${styles.efects_container}`}>
+                            <div>
+                                <p>
+                                    FRA:
+                                </p>
+                                {...fraquezas}
+                            </div>
+                            <div>
+                                <p>
+                                    SE:
+                                </p>
+                                {...super_efetivos}
+
+                            </div>
+                        </div>
+                        {/* Adiciona borda para a descrição */}
+                        <div className={`${borderClass} ${border.pixelCornersDescription} ${styles.description}`}>
+                            <p>
+                                {json[key]['description']}
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+
+
+
             </>
         }
     }
