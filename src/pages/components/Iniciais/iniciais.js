@@ -4,12 +4,15 @@ import Fogo from "@img/fogo";
 import Planta from "@img/planta"
 import { getBorderClassByColor, getBorderClassByType } from '../../../utils/borderUtils';
 import border from '../../../styles/borders.module.css'
+import { symlink } from "fs";
 
 function ColoredImage({ ImageComponent, fillColor, borderClass }) {
     return (
-        <div className={`${borderClass} ${border.pixelCorners} ${styles.elements}`}>
-            <ImageComponent fill={fillColor} />
-        </div>
+        <a>
+            <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
+                <ImageComponent fill={fillColor} />
+            </button>
+        </a>
     );
 }
 
@@ -20,7 +23,7 @@ export default function iniciais() {
     const fillColor = '#603B88';
     return (
         <div className={styles.iniciais}>
-            <p>
+            <p className={styles.intro_text}>
                 CONHECENDO OS STARTERS
             </p>
             <p>
@@ -38,17 +41,20 @@ export default function iniciais() {
                     <img src="img/aspas.png" />
                 </div>
             </div>
+            <div className={styles.bar_container}>
+                <div className="tipos">
+                    <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} />
+                    <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} />
+                    <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} />
 
-            <div className={styles.container}>
-                <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} />
-                <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} />
-                <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} />
+                </div>
                 <a href="https://www.idejr.com.br/" target="_blank">
                     <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
                         <img src="img/logo-pixelado-roxo.png" alt="Logo" />
                     </button>
                 </a>
             </div>
+
 
 
         </div>

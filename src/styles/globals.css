@@ -127,3 +127,20 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.tipos {
+    display: flex;
+    flex-direction: row;
+}
+
+.tipos button {
+    margin: 0.2rem;
+    height: 3rem;
+    width: 6rem;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.tipos button:hover {
+    transform: translateY(-1rem);
+}
