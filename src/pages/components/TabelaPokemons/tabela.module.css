@@ -1,0 +1,12 @@
+.tabela {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 28em;
+}
+
+.tabela img {
+    width: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+}

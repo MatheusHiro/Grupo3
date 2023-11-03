@@ -137,10 +137,14 @@ table {
     margin: 0.2rem;
     height: 3rem;
     width: 6rem;
+.tipos img {
+    margin: 0.2rem;
+    width: 2rem;
     transition: transform 0.5s;
     cursor: pointer;
 }
 
 .tipos button:hover {
+.tipos img:hover {
     transform: translateY(-1rem);
 }
