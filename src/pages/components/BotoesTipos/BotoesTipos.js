@@ -74,6 +74,7 @@ export default function BotoesTipos(props) {
                 <div onClick={() => {
                     props.funcAgua();
                     clicaBotao('AGUA')
+                    mudaTipo('AGUA')
                 }}>
                     <ColoredImage
                         style={stylebtn1}
@@ -89,6 +90,7 @@ export default function BotoesTipos(props) {
                 <div onClick={() => {
                     props.funcPlanta();
                     clicaBotao('PLANTA')
+                    mudaTipo('PLANTA')
                 }}>
                     <ColoredImage
                         style={stylebtn2}
@@ -104,6 +106,7 @@ export default function BotoesTipos(props) {
                 <div onClick={() => {
                     props.funcFogo();
                     clicaBotao('FOGO')
+                    mudaTipo('FOGO')
                 }}>
                     <ColoredImage
                         style={stylebtn3}
