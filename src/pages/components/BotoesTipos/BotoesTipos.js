@@ -25,7 +25,6 @@ function ColoredImage({ ImageComponent, fillColor, borderClass, type }) {
 
 
 export default function BotoesTipos(props) {
-    console.log(props)
     return (
         <>
             <div onClick={props.funcAgua}>

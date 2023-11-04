@@ -11,13 +11,31 @@ export default function iniciais() {
     const [tipo, setTipo] = useState('');
     const mudaTipo = (value) => {
         setTipo(value)
+
+        let cor
+        switch (value) {
+            case "PLANTA":
+                cor = '#3B8863'
+                break;
+            case "AGUA":
+                cor = '#3B6388'
+                break;
+            case "FOGO":
+                cor = '#AD3F3F'
+                break;
+        }
+        setBorderClass(getBorderClassByColor(cor))
+        setFillColor(cor)
     }
 
-    const borderClass = getBorderClassByColor('#603B88');
-    const fillColor = '#603B88';
+    const [borderClass, setBorderClass] = useState(getBorderClassByColor('#603B88'));
+
+
+    const [fillColor, setFillColor] = useState('#603B88');
+
 
     return (
-        <>
+        <div>
             {tipo === "AGUA" ? <Starter tipo={'AGUA'} /> : null}
             {tipo === "PLANTA" ? <Starter tipo={'PLANTA'} /> : null}
             {tipo === "FOGO" ? <Starter tipo={'FOGO'} /> : null}
@@ -62,6 +80,6 @@ export default function iniciais() {
 
 
             </div>
-        </>
+        </div>
     );
 }
