@@ -1,34 +1,24 @@
-import Agua from "@img/agua";
 import styles from "../Iniciais/iniciais.module.css";
-import Fogo from "@img/fogo";
-import Planta from "@img/planta"
 import { getBorderClassByColor, getBorderClassByType } from '../../../utils/borderUtils';
 import border from '../../../styles/borders.module.css'
 import { symlink } from "fs";
-
-function ColoredImage({ ImageComponent, fillColor, borderClass, type }) {
-    return (
-        <div className={styles.tipos_text}>
-            <p >
-                {type}
-            </p>
-            <div className={styles.elements}>
-                <button className={`${borderClass} ${border.pixelCorners} `}>
-
-                    <ImageComponent fill={fillColor} />
-                </button>
-            </div>
-
-
-        </div>
-    );
-}
-
+import React, { useState } from 'react';
+import BotoesTipos from "../BotoesTipos/BotoesTipos"
 
 export default function iniciais() {
 
+    const [tipo, setTipo] = useState('');
+
+    const mudaTipo = (tipo) => {
+        setTipo(tipo)
+    }
+
     const borderClass = getBorderClassByColor('#603B88');
     const fillColor = '#603B88';
+
+    if (tipo == 'agua') {
+        return T
+    }
     return (
         <div className={styles.iniciais}>
             <p className={styles.intro_text}>
@@ -53,10 +43,13 @@ export default function iniciais() {
             </div>
             <div className={styles.bar_container}>
                 <div className={styles.tipos}>
-                    <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} type={"AGUA"} />
-                    <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} type={"PLANTA"} />
-                    <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} type={"FOGO "} />
-
+                    <BotoesTipos
+                        borderClass={borderClass}
+                        fillColor={fillColor}
+                        funcAgua={() => mudaTipo('agua')}
+                        funcPlanta={() => mudaTipo('planta')}
+                        funcFogo={() => mudaTipo('fogo')}
+                    />
                 </div>
                 <a href="https://www.idejr.com.br/" target="_blank">
                     <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
