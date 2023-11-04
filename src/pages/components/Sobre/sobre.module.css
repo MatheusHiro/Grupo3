@@ -1,0 +1,38 @@
+.sobre {
+    background-color: #603b88;
+    display: flex;
+}
+
+.neko {
+    margin: 3rem 32rem 6rem 8rem;
+    display: flex;
+}
+
+.texto {
+    margin: 4rem 2rem 6rem 24rem;
+    display: flex;
+    font-size: large;
+    border-left: rgba(247, 8, 167, 0.753)solid;
+    border-left-width: 8px;
+}
+
+.letras {
+    margin: 5rem 1rem 6rem;
+    display: flex;
+    font-size: larger;
+}
+
+.sobrenos {
+    margin: 5rem 2rem 0rem 24rem;
+    display: flex;
+    font-size: 4rem;
+    text-shadow: 2px 4px black;
+}
+
+.ide {
+    margin: 0rem 0rem 0rem 0rem;
+    display: flex;
+    right: 1240px;
+    top: 600px;
+    position: absolute;
+}
