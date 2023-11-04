@@ -43,6 +43,7 @@
 .nekoPiscando{
     width: 25rem;
     align-self: center;
+}
 .elements button {
     background-color: white;
     transition: transform 0.5s;

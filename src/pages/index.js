@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Banner />
       <Iniciais />
-      <Starter />
+      {/* <Starter /> */}
       <Formulario />
       <Footer />
     </>

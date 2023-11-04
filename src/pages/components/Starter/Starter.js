@@ -5,18 +5,15 @@ import border from "../../../styles/borders.module.css"
 import { getBorderClassByColor, getBorderClassByType } from '../../../utils/borderUtils';
 import styles from "../Starter/starter.module.css"
 
-export default function Starter() {
-    // let tipo = "AGUA"
-    let tipo = "PLANTA"
-    // let tipo = "FOGO"
+export default function Starter(props) {
 
     let fraquezas = []
     let super_efetivos = []
 
-    let borderClass = getBorderClassByType(tipo)
+    let borderClass = getBorderClassByType(props.tipo)
 
     for (const key in json) {
-        if (tipo == key) {
+        if (props.tipo == key) {
 
             for (const key_elemento in json[key]['fraquezas']) {
                 fraquezas.push(Tipo(json[key]['fraquezas'][key_elemento]))
@@ -32,18 +29,11 @@ export default function Starter() {
                     <div className={styles.description_container}>
                         {/*Adiciona a tipo e modifica a cor do texto de acordo com ele*/}
                         <h2 className={styles.tipoTitulo} style={{ color: json[key]['mainColor'] }}>
-                            {tipo}
+                            {props.tipo}
                         </h2>
                         {/*Bota a tabela de pokemons*/}
 
                         <TabelaPokemons json={json[key]} />
-
-                        <div className={styles.tipos}>
-                            <ColoredImage ImageComponent={Agua} fillColor={json[key]['mainColor']} borderClass={borderClass} />
-                            <ColoredImage ImageComponent={Planta} fillColor={json[key]['mainColor']} borderClass={borderClass} />
-                            <ColoredImage ImageComponent={Fogo} fillColor={json[key]['mainColor']} borderClass={borderClass} />
-
-                        </div>
                     </div>
                     <div className={styles.description_container}>
 
@@ -73,10 +63,6 @@ export default function Starter() {
                         </div>
                     </div>
                 </div>
-
-
-
-
             </>
         }
     }
