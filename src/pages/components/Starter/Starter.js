@@ -3,7 +3,7 @@ import Tipo from "../Tipo/Tipo"
 import json from '../../../../content/pokemons.json';
 import border from "../../../styles/borders.module.css"
 import { getBorderClassByColor, getBorderClassByType } from '../../../utils/borderUtils';
-import styles from "./starter.module.css"
+import styles from "../Starter/starter.module.css"
 
 export default function Starter() {
     // let tipo = "AGUA"
@@ -30,19 +30,19 @@ export default function Starter() {
 
             return <>
                 <div className={styles.container}>
-                    <div className={styles.container_description}>
+                    <div className={styles.description_container}>
                         {/*Adiciona a tipo e modifica a cor do texto de acordo com ele*/}
-                        <p style={{ color: json[key]['mainColor'] }}>
+                        <h2 className={styles.tipoTitulo} style={{ color: json[key]['mainColor'] }}>
                             {tipo}
-                        </p>
+                        </h2>
                         {/*Bota a tabela de pokemons*/}
 
                         <TabelaPokemons json={json[key]} />
                     </div>
-                    <div className={styles.container_description}>
-                        <div>
-                            <img src="/img/neko-piscando.png" />
-                        </div>
+                    <div className={styles.description_container}>
+
+                        <img className={styles.nekoPiscando} src="/img/neko-piscando.png" />
+
                         {/*div para as fraquezas e super efetivos*/}
                         <div className={`${'tipos'} ${styles.efects_container}`}>
                             <div>

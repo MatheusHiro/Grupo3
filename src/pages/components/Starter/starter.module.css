@@ -33,3 +33,12 @@
 .title {
     color: red;
 }
+
+.tipoTitulo{
+    font-size: 3rem;
+}
+
+.nekoPiscando{
+    width: 25rem;
+    align-self: center;
+}
