@@ -42,30 +42,39 @@ export default function iniciais() {
                         ESCOLHA UM!
                     </p>
                     <p>
-                    <img src="img/neko-dormindo.png" className={styles.pokemonDormindo}/>
+                        <img src="img/neko-dormindo.png" className={styles.pokemonDormindo} />
                     </p>
                 </div>
-                 <div className={styles.verticalLine}>
-                    
-                 </div>
+                <div className={styles.verticalLine}>
+
+                </div>
                 <div className={styles.Treinadores}>
-                    <img src="img/aspas.png" className={styles.TreinadoresImg1}/>
+                    <img src="img/aspas.png" className={styles.TreinadoresImg1} />
                     <p>
                         Treinadores Pokémon enfrentam uma decisão crucial ao escolher seu Pokémon inicial, pois isso moldará suas aventuras. Os tipos - Água, Fogo e Planta - influenciam as batalhas e estratégias. Água domina Fogo, Fogo vence Planta, e Planta supera Água. Escolher com sabedoria é a chave para o sucesso nas jornadas Pokémon. Conheça um pouco mais sobre esses tipos!
                     </p>
-                    <img src="img/aspas.png" className={styles.TreinadoresImg2}/>
+                    <img src="img/aspas.png" className={styles.TreinadoresImg2} />
                 </div>
             </div>
             <div className={styles.bar_container}>
                 <div className={styles.tipos}>
-                    <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} type={"AGUA"} />
-                    <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} type={"PLANTA"} />
-                    <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} type={"FOGO "} />
+                    <div className={styles.move}> {/* adiciona movimento no hover para o texto junto do botão */}
+                        <ColoredImage ImageComponent={Agua} fillColor={fillColor} borderClass={borderClass} type={"AGUA"} />
+
+                    </div>
+                    <div className={styles.move}>
+                        <ColoredImage ImageComponent={Planta} fillColor={fillColor} borderClass={borderClass} type={"PLANTA"} />
+
+                    </div>
+                    <div className={styles.move}>
+                        <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} type={"FOGO "} />
+
+                    </div>
 
                 </div>
-                <a href="https://www.idejr.com.br/" target="_blank"className={styles.bar_container2}>
+                <a href="https://www.idejr.com.br/" target="_blank" className={styles.bar_container2}>
                     <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
-                        <img src="img/logo-pixelado-roxo.png" alt="Logo" className={styles.logo}/>
+                        <img src="img/logo-pixelado-roxo.png" alt="Logo" className={styles.logo} />
                     </button>
                 </a>
             </div>
