@@ -2,6 +2,9 @@ import styles from './sobre.module.css'
 import Image from 'next/image'
 import nekoComemorando from '../../../../public/img/neko-comemorando.png'
 import logo from '../../../../public/img/logo-pixelado-branco.png'
+import Image from 'next/image'
+import nekoComemorando from '../../../../public/img/neko-comemorando.png'
+import logo from '../../../../public/img/logo-pixelado-branco.png'
 
 export default function Sobre() {
     return (

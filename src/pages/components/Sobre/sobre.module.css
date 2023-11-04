@@ -5,6 +5,9 @@
 .teste {
     background-color: #603b88;
 }
+.teste {
+    background-color: #603b88;
+}
 
 .neko {
     margin: 3rem 32rem 6rem 8rem;
@@ -17,8 +20,10 @@
     display: flex;
     font-size: large;
     background-color: #242424;
+    background-color: #242424;
     border-left: rgba(247, 8, 167, 0.753)solid;
     border-left-width: 8px;
+    
     
 }
 
@@ -34,7 +39,9 @@
     margin-left: 5%;
     font-size: 4rem;
     color: #fff;
+    color: #fff;
     text-shadow: 2px 4px black;
+
 
 }
 
