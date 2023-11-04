@@ -2,7 +2,7 @@ import styles from './sobre.module.css'
 
 export default function Sobre() {
     return (
-        <body className={styles.sobre}>
+        <div className={styles.sobre}>
             <div className={styles.container}>
                 <div>
                     <h2 className={styles.sobrenos}>
@@ -24,7 +24,7 @@ export default function Sobre() {
             </div>
 
 
-        </body>
+        </div>
     )
 }
 
