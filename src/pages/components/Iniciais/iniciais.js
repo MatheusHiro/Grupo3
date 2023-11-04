@@ -36,19 +36,24 @@ export default function iniciais() {
             </p>
 
             <div className={`${styles.description_container} ${borderClass} ${border.pixelCorners}`}>
-                <div>
+                <div >
 
-                    <p>
+                    <p className={styles.escolhaUm}>
                         ESCOLHA UM!
                     </p>
-                    <img src="img/neko-dormindo.png" />
+                    <p>
+                    <img src="img/neko-dormindo.png" className={styles.pokemonDormindo}/>
+                    </p>
                 </div>
-                <div>
-                    <img src="img/aspas.png" />
+                 <div className={styles.verticalLine}>
+                    
+                 </div>
+                <div className={styles.Treinadores}>
+                    <img src="img/aspas.png" className={styles.TreinadoresImg1}/>
                     <p>
                         Treinadores Pokémon enfrentam uma decisão crucial ao escolher seu Pokémon inicial, pois isso moldará suas aventuras. Os tipos - Água, Fogo e Planta - influenciam as batalhas e estratégias. Água domina Fogo, Fogo vence Planta, e Planta supera Água. Escolher com sabedoria é a chave para o sucesso nas jornadas Pokémon. Conheça um pouco mais sobre esses tipos!
                     </p>
-                    <img src="img/aspas.png" />
+                    <img src="img/aspas.png" className={styles.TreinadoresImg2}/>
                 </div>
             </div>
             <div className={styles.bar_container}>
@@ -58,9 +63,9 @@ export default function iniciais() {
                     <ColoredImage ImageComponent={Fogo} fillColor={fillColor} borderClass={borderClass} type={"FOGO "} />
 
                 </div>
-                <a href="https://www.idejr.com.br/" target="_blank">
+                <a href="https://www.idejr.com.br/" target="_blank"className={styles.bar_container2}>
                     <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
-                        <img src="img/logo-pixelado-roxo.png" alt="Logo" />
+                        <img src="img/logo-pixelado-roxo.png" alt="Logo" className={styles.logo}/>
                     </button>
                 </a>
             </div>

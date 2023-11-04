@@ -1,11 +1,14 @@
 .iniciais {
+    
     color: #603B88;
 }
 
 .intro_text {
-
+    
     text-align: center;
-    font-size: 300%;
+    font-size: 270%;
+    margin-bottom: 70px;
+    margin-top: 130px;
 }
 
 .button_type_color {}
@@ -22,11 +25,21 @@
 .bar_container {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    width: 90%; 
+
+    margin-bottom: 10%;
 }
 
 .description_container {
     display: flex;
     flex-direction: row;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin: 0 auto;
+    width: 1400px; 
+    height: 300px;
+    margin-bottom: 20px;
 }
 
 
@@ -39,11 +52,12 @@
 .tipos {
     display: flex;
     flex-direction: row;
+    margin-top: 15px;
 }
 
 .elements button {
     background-color: white;
-
+    
     margin: 0.2rem;
     height: 3rem;
     width: 6rem;
@@ -61,3 +75,75 @@
 .tipos button:hover {
     transform: translateY(-1rem);
 }*/
+
+.verticalLine {
+    width: 2px; /* Largura da linha vertical */
+    height: 100vh; /* Altura da linha, você pode ajustar conforme necessário */
+    background-color: #603B88; /* Cor da linha */
+    position: absolute;
+    left: 400px; /* Posição à esquerda do viewport */
+    /*transform: translateX(-50%);*/ /* Centralizar a linha vertical no meio */
+  }
+  .escolhaUm{
+    height: 80px;
+    font-size:20px;
+    background-color: white;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 400px;
+  }
+  .pokemonDormindo{
+     width: 170px;
+     height:170px;
+     
+     margin-left: 100px;
+     
+  }
+.Treinadores{
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 auto;
+    width: 50%;
+    
+  }
+  .TreinadoresImg1{
+    height: 50px;
+    background-color: white;
+    
+    
+    
+    margin-left: 8%;
+    margin-bottom: 20px;
+    width: 50px;
+    
+  }
+  .TreinadoresImg2{
+    height: 50px;
+    background-color: white;
+    
+    transform: scaleX(-1);
+    
+    margin-left: 80%;
+    margin-top: 20px;
+    width: 50px;
+    
+  }
+
+  .bar_container2 {
+    margin-top: -20px;
+    margin-left: 100px;
+    width: 500px;
+    height: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    
+}
