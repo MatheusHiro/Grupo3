@@ -3,9 +3,10 @@ import styles from './sobre.module.css'
 export default function Sobre() {
     return (
         <div className={styles.sobre}>
-            <p className={styles.sobrenos}>SOBRE NOS</p>
-            <div className={styles.textobox} >
-                <p className={styles.letras}>
+            <div className={styles.alinhar}>
+             <p className={styles.sobrenos}>SOBRE NOS</p>
+               <div className={styles.textobox} > 
+                 <p className={styles.letras}>
                     A IDE é a empresa júnior dos cursos Ciência e
                     Engenharia de Computação da Universidade
                     Federal do Rio Grande do Sul. Formado por alunos
@@ -16,9 +17,10 @@ export default function Sobre() {
                     UFRGS, o Instituto de Informática e seus
                     professores, que fornecem apoio técnico e
                     aconselhamento aos estudantes.
-                </p>
+                 </p>
                 <img src='img/logo-pixelado-branco.png' className={styles.ide} />
 
+               </div>
             </div>
             <div>
                 <img src='img/neko-comemorando.png' className={styles.neko} />
