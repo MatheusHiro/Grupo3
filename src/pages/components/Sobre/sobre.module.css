@@ -1,54 +1,56 @@
 .sobre {
     background-color: #603b88;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
 
-.teste {
-    background-color: #603b88;
 }
 
 .neko {
-    margin: 3rem 0 1rem;
+    margin: 3rem 32rem 6rem 8rem;
     display: flex;
-    justify-content: center;
 }
 
-.texto_container {
-    background-color: #242424;
-    margin: 1rem 5% 2rem;
-    padding: 1rem;
+.textobox {
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 50px;
     display: flex;
-    flex-direction: column;
     font-size: large;
-    border-left: rgba(247, 8, 167, 0.753) solid;
+    border-left: rgba(247, 8, 167, 0.753)solid;
     border-left-width: 8px;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .letras {
-    margin: 2rem 1rem;
-    color: #fff;
-    text-shadow: 2px 4px black;
+    color: white;
+    margin: 5rem 1rem 6rem;
+    display: flex;
     font-size: larger;
 }
 
 .sobrenos {
-    font-size: 4rem;
-    color: #fff;
+    color: white;
+    margin-top: 60px;
+    margin: 110px;
+    margin-left: 150px;
+    margin-bottom: 60px;
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
     text-shadow: 2px 4px black;
-    margin: 2rem 5%;
 }
 
 .ide {
-    width: 50;
+    color: purple;
+    height: 30;
+    margin: 0;
+    margin-top: 100px;
+    display: flex;
+    right: 1240px;
+    top: 800px;
+    position: absolute;
+}
+
+.alinhar {
+
+    display: block;
+
 }
