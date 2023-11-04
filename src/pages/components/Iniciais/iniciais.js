@@ -47,17 +47,20 @@ export default function iniciais() {
                 <div className={`${styles.description_container} ${borderClass} ${border.pixelCorners}`}>
                     <div>
 
-                        <p>
+                        <p className={styles.escolhaUm}>
                             ESCOLHA UM!
                         </p>
-                        <img src="img/neko-dormindo.png" />
+                        <img src="img/neko-dormindo.png" className={styles.pokemonDormindo} />
                     </div>
-                    <div>
-                        <img src="img/aspas.png" />
+                    <div className={styles.verticalLine}>
+
+                    </div>
+                    <div className={styles.Treinadores}>
+                        <img src="img/aspas.png" className={styles.TreinadoresImg1} />
                         <p>
                             Treinadores Pokémon enfrentam uma decisão crucial ao escolher seu Pokémon inicial, pois isso moldará suas aventuras. Os tipos - Água, Fogo e Planta - influenciam as batalhas e estratégias. Água domina Fogo, Fogo vence Planta, e Planta supera Água. Escolher com sabedoria é a chave para o sucesso nas jornadas Pokémon. Conheça um pouco mais sobre esses tipos!
                         </p>
-                        <img src="img/aspas.png" />
+                        <img src="img/aspas.png" className={styles.TreinadoresImg2} />
                     </div>
                 </div>
             </div> : null}
@@ -70,11 +73,12 @@ export default function iniciais() {
                         funcAgua={() => mudaTipo('AGUA')}
                         funcPlanta={() => mudaTipo('PLANTA')}
                         funcFogo={() => mudaTipo('FOGO')}
+                        hideText={null} //passa null para hideText, default é para mostrar
                     />
                 </div>
                 {tipo === "" ? <a href="https://www.idejr.com.br/" target="_blank">
                     <button className={`${styles.button} ${borderClass} ${border.pixelCorners} `}>
-                        <img src="img/logo-pixelado-roxo.png" alt="Logo" />
+                        <img src="img/logo-pixelado-roxo.png" alt="Logo" className={styles.logo} />
                     </button>
                 </a> : null}
 
