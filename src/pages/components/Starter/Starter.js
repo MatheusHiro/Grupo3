@@ -15,7 +15,6 @@ export default function Starter() {
 
     let borderClass = getBorderClassByType(tipo)
 
-
     for (const key in json) {
         if (tipo == key) {
 
@@ -38,6 +37,13 @@ export default function Starter() {
                         {/*Bota a tabela de pokemons*/}
 
                         <TabelaPokemons json={json[key]} />
+
+                        <div className={styles.tipos}>
+                            <ColoredImage ImageComponent={Agua} fillColor={json[key]['mainColor']} borderClass={borderClass} />
+                            <ColoredImage ImageComponent={Planta} fillColor={json[key]['mainColor']} borderClass={borderClass} />
+                            <ColoredImage ImageComponent={Fogo} fillColor={json[key]['mainColor']} borderClass={borderClass} />
+
+                        </div>
                     </div>
                     <div className={styles.description_container}>
 

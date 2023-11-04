@@ -1,13 +1,15 @@
 .description {
     text-align: center;
-    /* Center the text horizontally */
     line-height: 7rem;
-    /* Adjust to a value slightly less than the container's height */
     margin: 0.6rem;
     height: 8rem;
     width: 40rem;
     vertical-align: middle;
-    /* Center the text vertically */
+}
+
+.tipos {
+    display: flex;
+    flex-direction: row;
 }
 
 .description_container {
@@ -41,4 +43,15 @@
 .nekoPiscando{
     width: 25rem;
     align-self: center;
+.elements button {
+    background-color: white;
+    transition: transform 0.5s;
+    margin: 0.2rem;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.elements button:hover {
+    transform: translateY(-1rem);
 }
